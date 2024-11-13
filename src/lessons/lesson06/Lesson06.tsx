@@ -49,7 +49,7 @@ heroes.push(gendalf)
 
 
     return(
-        <div>
+        <div className="lesson-container">
             <h2>Lesson 06</h2>
             <p>React TypeScript</p>
         </div>
