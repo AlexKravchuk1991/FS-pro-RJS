@@ -12,6 +12,7 @@ import FetchDog from './components/fetchdog/FetchDog';
 import Homework08 from './homeworks/homework_08/Homework08';
 import Lesson09 from './lessons/lesson09/Lesson09';
 import Kons01 from './konsultacia/Kons01';
+import Lesson10 from './lessons/lesson10/Lesson10';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,7 +27,8 @@ root.render(
   {/* <FetchDog/> */}
   {/* <Homework08/> */}
   {/* <Lesson09/> */}
-  <Kons01/>
+  {/* <Kons01/> */}
+  <Lesson10/>
   </>
     
  
