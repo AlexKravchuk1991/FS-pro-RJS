@@ -1,4 +1,4 @@
-import reactImg from "../../assets/react-img.jpg";
+// import reactImg from "";
 import MyButton from "../../components/myButton/MyButton";
 
 import "./lesson_02.css";
@@ -27,7 +27,7 @@ function Lesson02():JSX.Element {
     <div className="lesson-container">
       <h1>Lesson 02</h1>
       <p>React JSX component</p>
-      <img className="img-cont" src={reactImg} alt="photo" />
+      {/* <img className="img-cont" src={reactImg} alt="photo" /> */}
       <ul>
         <li>simple text</li>
         {element}

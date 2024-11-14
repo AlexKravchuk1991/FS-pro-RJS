@@ -3,6 +3,7 @@ import MyButton from "../../components/myButton/MyButton";
 import cn from "classnames";
 import style from "./lesson.module.css";
 import { link } from "fs";
+import Loader from "../../components/loader/Loader";
 
 export default function Lesson10() {
   const [data, setData] = useState<string[]>([]);
@@ -44,11 +45,15 @@ export default function Lesson10() {
       </div>
       {data.length > 0 && (
         <div className={style.factsCard}>
-          <ul>
-            {data.map((catFact, index) => (
+         
+            {loader ? <Loader/>:(
+               <ul>  
+                {data.map((catFact, index) => (
               <li key={index}>{catFact}</li>
             ))}
           </ul>
+            )}
+            
         </div>
       )}
     </div>
