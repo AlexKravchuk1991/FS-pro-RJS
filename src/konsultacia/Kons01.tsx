@@ -24,7 +24,7 @@ const RANDOM_JOKE_URL:string = "https://official-joke-api.appspot.com/random_jok
     if(response.ok){
       //* тут пишем логику по УСПЕШНО пришедшим данным
       setJoke(`${result.setup} `)
-      setTimeout(()=>{setJokeAntw(`${result.punchline}`)},1000)
+      setTimeout(()=>{setJokeAntw(`${result.punchline}`)},3000)
     }else{
       //! тут пишем логигу если пришла ОШИБКА
       setError('Some Network Err')

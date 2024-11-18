@@ -7,6 +7,7 @@ export default function Homeworkpage() {
     <div className={style.homeworkMainCont}>
         <Link to='homework08'>Homework 08</Link>
         <Link to='homework10'>Homework 10</Link>
+        <Link to='homework12'>Homework 12</Link>
     </div>
   )
 }

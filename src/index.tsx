@@ -24,12 +24,15 @@ import Homepage from './components/homepage/Homepage';
 import Lesson02 from './lessons/lesson02/lesson_02';
 import Lesson03 from './lessons/lesson03/Lesson03';
 import Homeworkpage from './components/homeworkpage/Homeworkpage';
+import Lesson12 from './lessons/lesson12/Lesson12';
+import Homework12 from './homeworks/homework_12/Homework12';
+import Lesson13 from './lessons/lesson13/Lesson13';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <HashRouter>
+  <HashRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
   <Routes>
   <Route path='/' element={<Layout/>}>
   <Route path='/' element={<Homepage/>}/>
@@ -42,9 +45,12 @@ root.render(
   <Route path='lesson08' element={<Lesson08/>}/>
   <Route path='lesson09' element={<Lesson09/>}/>
   <Route path='lesson10' element={<Lesson101/>}/>
+  <Route path='lesson12' element={<Lesson12/>}/>
+  <Route path='lesson13' element={<Lesson13/>}/>
   <Route path='homeworkpage' element={<Homeworkpage/>}/>
   <Route path='homeworkpage/homework08' element={<Homework08/>}/>
   <Route path='homeworkpage/homework10' element={<Lesson101/>}/>
+  <Route path='homeworkpage/homework12' element={<Homework12/>}/>
  
   <Route path='kons01' element={<Kons01/>}/>
   </Route>

@@ -16,6 +16,8 @@ export default function Homepage() {
         <Link to='lesson08'>Lesson 8</Link>
         <Link to='lesson09'>Lesson 9</Link>
         <Link to='lesson10'>Lesson 10</Link>
+        <Link to='lesson12'> Lesson 12</Link>
+        <Link to='lesson13'>Lesson 13</Link>
         </div>
         <div>
 
