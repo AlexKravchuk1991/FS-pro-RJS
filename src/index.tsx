@@ -27,11 +27,18 @@ import Homeworkpage from './components/homeworkpage/Homeworkpage';
 import Lesson12 from './lessons/lesson12/Lesson12';
 import Homework12 from './homeworks/homework_12/Homework12';
 import Lesson13 from './lessons/lesson13/Lesson13';
+import Lesson14 from './lessons/lesson14/Lesson14';
+import ProductPage from './components/productpage/ProductPage';
+import Products from './components/products/Products';
+import NoPage from './components/noPage/NoPage';
+import { CartProvider } from './context/cartContext';
+import Cart from './components/cart/Cart';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+  <CartProvider>
   <HashRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
   <Routes>
   <Route path='/' element={<Layout/>}>
@@ -47,16 +54,23 @@ root.render(
   <Route path='lesson10' element={<Lesson101/>}/>
   <Route path='lesson12' element={<Lesson12/>}/>
   <Route path='lesson13' element={<Lesson13/>}/>
+  <Route path='lesson13/:anywhere' element={<Lesson10/>}/>
+  <Route path='products/:id' element={<ProductPage/>}/>
+  <Route path='products' element={<Products/>}/>
+  <Route path='cart' element={<Cart/>}/>
+  <Route path='lesson14' element={<Lesson14/>}/>
   <Route path='homeworkpage' element={<Homeworkpage/>}/>
   <Route path='homeworkpage/homework08' element={<Homework08/>}/>
   <Route path='homeworkpage/homework10' element={<Lesson101/>}/>
   <Route path='homeworkpage/homework12' element={<Homework12/>}/>
+  <Route path='homeworkpage/:name' element={<Lesson14/>}/>
+  <Route path='*' element={<NoPage/>}/>
  
   <Route path='kons01' element={<Kons01/>}/>
   </Route>
   </Routes>
   </HashRouter>
-    
+  </CartProvider>
  
 );
 

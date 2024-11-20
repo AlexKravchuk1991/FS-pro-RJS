@@ -2,6 +2,7 @@ import * as Yup from 'yup'
 import MyButton from '../../components/myButton/MyButton'
 import style from './lesson13.module.css'
 import { useFormik } from 'formik'
+import { Link } from 'react-router-dom'
 
 
 interface IFormValue {
@@ -41,6 +42,7 @@ export default function Lesson13() {
         <span className={style.errorMassege}>{formik.errors.email}</span>
 
         <MyButton text='Send' type='submit'/>
+        <Link to={'4'}>anywhere </Link>
       </form>
       
      

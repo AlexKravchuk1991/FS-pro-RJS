@@ -11,7 +11,7 @@
     border-bottom: 2px solid gold;
     position: sticky;
     top: 0px;
-    
+    z-index: 1;
     }
     
     .header a {
@@ -21,4 +21,9 @@
     
     .header a:hover{
         text-decoration: underline;
+    }
+
+    .linkAcytive{
+        text-decoration: underline;
+        
     }
